@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Modal</title>
+  <script src="MyModal.js"></script>
+</head>
+
+
+<body>
+  <style>
+    #login-button {
+        background-color: green;
+        color: white;
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+    #login-button:hover {
+        cursor:pointer;
+        background-color: rgb(17, 172, 17);
+      }
+    #username {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    #password {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+  </style>
+
+  
+  <button class="open" id="login-button">Login</button>
+
+  <login-modal>
+    <!-- <h>Info</h>
+    <p>Something something... </p> -->
+    <label><b>Username:<b></label><br>
+    <input type="text" id="username" placeholder="Enter Username"><br><br>
+    <label><b>Password:<b></label><br>
+    <input type="password" id="password" placeholder="Enter Password"><br><br>
+    <button id="login-button">Login</button>
+  </login-modal>
+
+  </body>
+
+  </html>
